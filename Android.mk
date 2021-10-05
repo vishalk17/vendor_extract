@@ -44,6 +44,16 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := libvcodecdrv
+LOCAL_SRC_FILES_64 := proprietary/lib64/libvcodecdrv.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libvcodecdrv.so
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_MULTILIB := both
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
 # Apps
 
 include $(CLEAR_VARS)
