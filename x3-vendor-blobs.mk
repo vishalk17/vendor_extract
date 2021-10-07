@@ -33,10 +33,11 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/leeco/x3/proprietar
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/leeco/x3/proprietary/vendor,system/vendor)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/leeco/x3/proprietary/framework,system/framework)
+
 # Prebuilt Apps
 
 PRODUCT_PACKAGES += \
-	DiracAudioControlService \
 	Ds1\
 	Ds1UI\
 	GFManager \
@@ -44,3 +45,4 @@ PRODUCT_PACKAGES += \
 	LocationEM2 \
 	MTKThermalManager \
 	UEIQuicksetSDKLeTV
+#	DiracAudioControlService \
